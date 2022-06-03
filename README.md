@@ -6,4 +6,4 @@ A project made for educational purposes. I am a student and decided to make an a
 - Tkinter
 - Random
 ### The fonts used are taken from Google Fonts, or as follows:
-- 
+- [Cinzel](https://fonts.google.com/specimen/Cinzel?query=Cinzel)
