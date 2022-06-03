@@ -1,1 +1,2 @@
-# LearnPython app
+# LearnPython
+### by Blagovest.Manolov
