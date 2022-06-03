@@ -5,3 +5,6 @@ A project made for educational purposes. I am a student at SoftUni and decided t
 ### For this purpose I have used the following libraries:
 - Tkinter
 - Random
+
+### The fonts used are taken from Google Fonts, or as follows:
+- 
