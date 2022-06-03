@@ -4,6 +4,9 @@ A project made for educational purposes. I am a student and decided to make an a
 
 ### For this purpose I have used the following libraries:
 - Tkinter
+``` python
+import tkinter 
+```
 - Random
 
 ### The fonts used are taken from Google Fonts, or as follows:
