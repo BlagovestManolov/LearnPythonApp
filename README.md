@@ -30,4 +30,21 @@ A project made for educational purposes. I am a student and decided to make an a
   first_window.mainloop() #start your window
   ```
 ![first_window](https://user-images.githubusercontent.com/101090286/171996373-d0cd4881-5c66-4c0d-9b63-134c442b9bd1.png)
-
+   - Create an additional canvas, which we place in an existing window. Place the canvas in the left, upper corner with coordinates 0, 0
+  ```python
+  r_canvas = Canvas(first_window,
+                  width=130,
+                  height=640,
+                  bg="#ad6332")
+  r_canvas.place(x=0, y=0)
+  ```
+![canvas](https://user-images.githubusercontent.com/101090286/171997741-57a9b725-d14a-4a99-97c4-1146fc37a7c8.png)
+   - Creating another canvas with a size of y - 3 times smaller, which will serve to show what stage of the program   we are.
+  ```python
+  b_canvas = Canvas(first_window,
+                  width=130,
+                  height=213,
+                  bg="#2d6063")
+  b_canvas.place(x=0, y=0)
+  ```
+![new_canvas](https://user-images.githubusercontent.com/101090286/171997912-91c7f849-f142-4f12-b72d-87dd68bfc109.png)
