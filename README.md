@@ -40,7 +40,7 @@ A project made for educational purposes. I am a student and decided to make an a
   ```
 ![canvas](https://user-images.githubusercontent.com/101090286/171997741-57a9b725-d14a-4a99-97c4-1146fc37a7c8.png)
    - Creating another canvas with a size of y - 3 times smaller, which will serve to show what stage of the program we are. Place the canvas in the left, 
-     upper corner with coordinates 0, 0
+     upper corner with coordinates 0, 0. After accessing another window other than the initial one, the green canvas will move one position down.
   ```python
   b_canvas = Canvas(first_window,
                   width=130,
