@@ -64,4 +64,16 @@ A project made for educational purposes. I am a student and decided to make an a
   ```
   ![name_game](https://user-images.githubusercontent.com/101090286/172006020-324d6a10-8934-4131-9c36-deb2b78c09f3.png)
 
+  - Create another text label that I will use to advertise myself 😄
+  ```python
+  created_by = Label(
+    text="created by Blagovest.Manolov",
+    font=("Cinzel Decorative Bold", 9),
+    fg="#2d6063",
+    bg="#e7e0c6"
+  )
+  created_by.place(x=230, y=287)
+  ```
+  ![by_me](https://user-images.githubusercontent.com/101090286/172006500-50d259dd-bbea-4477-8fbb-aff933f67fc9.png)
+
   
