@@ -55,10 +55,10 @@ A project made for educational purposes. I am a student and decided to make an a
   - Place a text label in the middle of your window. In this case we use a Lakki Reddy font, from google (shown above in the project presentation). The text label is the name of our game. Here the font size is larger (58), and the desired effect is easy to read the title.
   ```python
   ame_name_first = Label(
-    text="LearnPython",
-    font=("Lakki Reddy", 58),
-    fg="#2d6063",
-    bg="#e7e0c6"
+      text="LearnPython",
+      font=("Lakki Reddy", 58),
+      fg="#2d6063",
+      bg="#e7e0c6"
   )
   game_name_first.place(x=230, y=215)
   ```
@@ -67,13 +67,49 @@ A project made for educational purposes. I am a student and decided to make an a
   - Create another text label that I will use to advertise myself 😄
   ```python
   created_by = Label(
-    text="created by Blagovest.Manolov",
-    font=("Cinzel Decorative Bold", 9),
-    fg="#2d6063",
-    bg="#e7e0c6"
+      text="created by Blagovest.Manolov",
+      font=("Cinzel Decorative Bold", 9),
+      fg="#2d6063",
+      bg="#e7e0c6"
   )
   created_by.place(x=230, y=287)
   ```
   ![by_me](https://user-images.githubusercontent.com/101090286/172006500-50d259dd-bbea-4477-8fbb-aff933f67fc9.png)
+  - It's time for the buttons. We will use two types of buttons:
+    - Button to start the application and go to the next window. Used Cinzel Decorative Black font. When creating a button, it must execute a command. In this case, pressing the button will redirect us to a function named start.
+    ```python
+    start_button = Button(
+          text="Start",
+          font=("Cinzel Decorative Black", 16),
+          fg="#e7e0c6",
+          bg="#ad6332",
+          command=start
+    )
+    start_button.place(x=230, y=309)
+    ```
+    ![start_button](https://user-images.githubusercontent.com/101090286/172007104-6810e8f8-59c8-43fa-a57e-61b5e8cdd0c8.png)
 
-  
+    - Button that gives us information about the application. Here, in addition to creating the button, we will have to import something else. At the beginning of the project we need to import tkinter.messagebox. This allows us to open a new window that is individual. In addition, we will have to make a command to redirect to a function to open this message box.
+    ```python
+    import tkinter.messagebox
+    ```
+    ```python
+    information_button = Button(
+          text="INFORMATION",
+          font=("Cinzel Decorative Black", 8),
+          fg="#e7e0c6",
+          bg="#2d6063",
+          command=information
+    )
+    information_button.place(x=230, y=364)
+    ```
+    ![information](https://user-images.githubusercontent.com/101090286/172007938-d74d329c-8b6e-4786-9188-9b592ad239d4.png)
+    
+    - We will now define the first function (information). Through it we will access information about the project by pressing the information button.
+    ```python
+    def information():
+      tkinter.messagebox.showinfo("INFORMATION", "A project made for educational purposes. \n"
+                                                 "I am a student and decided to make an application\n"
+                                                 " through which we can learn Python.")
+    ```
+    ![information_panel](https://user-images.githubusercontent.com/101090286/172008569-c4016cbc-bcb8-4d75-b432-84e551907ebc.png)
